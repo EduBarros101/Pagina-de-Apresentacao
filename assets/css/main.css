@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem;
+}
+header #logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+header #logo img {
+  height: 3rem;
+}
+header #logo P {
+  padding: 0.7rem;
+  border: solid 0.25rem;
+  border-radius: 25px;
+  transition: 300ms;
+}
+header #logo p:hover {
+  background: white;
+  color: black;
+  border: solid 0.25rem grey;
+}
+header ul {
+  display: flex;
+  gap: 1rem;
+}
+header ul li {
+  border: 1px solid transparent;
+  padding: 0.25rem;
+  transition: 300ms;
+}
+header ul li:hover {
+  padding: 0.7rem;
+  border: solid 0.25rem;
+  border-radius: 25px;
+}
+
+.container {
+  text-align: center;
+}
+.container #arrow {
+  height: 2rem;
+  font-size: 30px;
+}
+.container #arrow i {
+  cursor: pointer;
+  transition: 300ms;
+  -webkit-animation: blink 1s steps(2, start) infinite;
+          animation: blink 1s steps(2, start) infinite;
+}
+.container #about {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  height: 400px;
+}
+.container #about p {
+  display: none;
+  max-width: 600px;
+  margin: auto 0;
+}
+.container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+  margin: auto;
+}
+.container .form form {
+  display: flex;
+  justify-content: center;
+}
+.container .form input {
+  width: 50%;
+  padding: 0.5rem;
+  border: solid 3px grey;
+  border-radius: 25px 0 0 25px;
+}
+.container .form button {
+  color: black;
+  padding: 0.5rem;
+  border: solid 3px grey;
+  border-radius: 0 25px 25px 0;
+  transition: 300ms;
+  cursor: pointer;
+}
+.container .form button:hover {
+  color: white;
+  background-color: black;
+  border: solid 3px white;
+  border-radius: 0 25px 25px 0;
+}
+
+.active {
+  display: block !important;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+@-webkit-keyframes blink {
+  to {
+    font-size: 2.1rem;
+  }
+}
+
+@keyframes blink {
+  to {
+    font-size: 2.1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #logo img {
+    display: none;
+  }
+  #logo p {
+    width: 110px;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
